@@ -83,7 +83,7 @@ else if(index===4){
   key="blues";
 }
 
-let newSongsArray=songsData.filter((song)=>{
+let newSongsArray=songsData?.filter((song)=>{
   console.log("key: ",key)
   return(song.genre.key===key);
 })

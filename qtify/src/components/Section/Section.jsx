@@ -34,7 +34,8 @@ const Section=({type,title,data,toggle=true})=> {
             </h4>
         </div>
         
-        {data.length?(
+        {/* {data.length?( */}
+        {data?.length > 0 ? (
             <div className={styles.sectionInnerWrapper}>
              {/* here, if carouselToggle is false then show first condition here(means "show all albums"), else show second (means show "Collpased view with corousel")*/}
             {!carouselToggle?(

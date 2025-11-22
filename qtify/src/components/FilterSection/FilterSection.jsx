@@ -22,7 +22,8 @@ const FilterSection = ({type, title, value, filteredData, handleChangeIndex}) =>
                <h3>{title}</h3> 
             </div>
             <BasicTabs handleChangeIndex={handleChangeIndex}/>
-        {filteredData.length?(
+        {filteredData?.length?(
+            
                 <div className={styles.cardsWrapper}>
                     <Carousel data={filteredData} renderCardComponent={(filteredData)=><Card data={filteredData} type={type}/>}/>
                 </div>

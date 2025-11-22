@@ -1,5 +1,5 @@
 import axios from "axios";
-export const BACKEND_ENPOINT="https://qtify-backend-labs.crio.do/";
+export const BACKEND_ENPOINT="https://qtify-backend.labs.crio.do";
 
 // function to get the Top-albums data from backend api
 export const fetchTopAlbums=async()=>{
